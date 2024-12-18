@@ -1,0 +1,19 @@
+a^(2n)d^(n) **Deterministic**
+q0,q1,q2,q3,q4,qacc,qrej
+a,d,$
+a,d,x,$
+q0
+qacc
+qrej
+q0,$,q1,$,R
+q1,x,q1,x,R
+q1,a,q2,x,R
+q1,_,qacc,_,L
+q2,a,q3,x,R
+q3,a,q3,a,R
+q3,x,q3,x,R
+q3,d,q4,x,L
+q4,a,q4,a,L
+q4,d,q4,d,L
+q4,x,q4,x,L
+q4,$,q1,$,R
